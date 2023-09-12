@@ -6,13 +6,14 @@
 */
 int main(void)
 {
-	int AL = 'a';
+	char AL = 'a';
 
 	while (AL<='z')
 	{
 		_putchar(AL);
 		AL++;
 	}
+	_putchar('\n');
 	
 	
 
