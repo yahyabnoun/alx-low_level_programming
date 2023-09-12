@@ -6,7 +6,7 @@ read var
 
 echo "#include <stdio.h>
 /**
- * main - Entry point
+ * ${var} - ${var}
  *
  * Return: Always 0 (Success)
 */
