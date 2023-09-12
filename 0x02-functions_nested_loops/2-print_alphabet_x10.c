@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_alphabet_x10 - Entry point
  *
@@ -7,15 +8,15 @@
 void print_alphabet_x10(void)
 {
  	char AL = 'a';
-for (int i = 0; i < 10; i++)
-{
-	while (AL <= 'z')
+	for (int i = 0; i < 10; i++)
 	{
-		_putchar(AL);
-		AL++;
+		while (AL <= 'z')
+		{
+			_putchar(AL);
+			AL++;
+		}
+		_putchar('\n');
+		
 	}
-	_putchar('\n');
-	
-}
 
 }
