@@ -1,13 +1,19 @@
-#include "main.h"
-#include <stdio.h>
 /**
- * print_alphabet_x10 - Entry point
+ * _isupper - checks if the passed argument is uppercase or not.
+ * @c: Integer
  *
- * Return: Always 0 (Success)
-*/
+ * Return: 1 if uppercase
+ * 0 if not
+ */
 int _isupper(int c)
 {
-	
-	_putchar('\n');
-
+	if (c > 64 && c < 91)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
+
