@@ -1,6 +1,6 @@
 /**
 * swap_int - swap_int.
-* @a:Integer 
+* @a:Integer
 * @b: Integer
 * void function
 */
