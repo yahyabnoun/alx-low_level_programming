@@ -1,6 +1,7 @@
 /**
 * swap_int - swap_int.
-* @a and @b: Integer
+* @a:Integer 
+* @b: Integer
 * void function
 */
 void swap_int(int *a, int *b)
