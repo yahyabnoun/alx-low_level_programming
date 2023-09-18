@@ -1,6 +1,6 @@
 /**
 * reset_to_98 - reset_to_98.
-* @c: Integer
+* @*n: Integer
 * void function
 */
 void reset_to_98(int *n)
