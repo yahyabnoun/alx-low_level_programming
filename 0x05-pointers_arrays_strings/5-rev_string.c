@@ -16,7 +16,7 @@ while (s[end] != '\0')
 end++;
 }
 end--;
-while (end)
+while (start < end)
 {
 str = s[start];
 s[start] = s[end];
