@@ -2,17 +2,16 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * print_rev - function that prints a string, in reverse
+ * rev_string - function that reverses a string.
  * @s: the string
  *
  * prints a string
  */
 void rev_string(char *s)
 {
-int end = strlen(s)-1;
+int end = strlen(s) - 1;
 int start = 0;
-
-char str ;
+char str;
 
 while (start < end)
 {
