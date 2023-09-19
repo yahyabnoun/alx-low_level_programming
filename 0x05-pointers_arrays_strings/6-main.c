@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-    char *str;
+char *str;
 
-    str = "Holberton!";
-    puts2(str);
-    return (0);
+str = "Holberton!";
+puts2(str);
+return (0);
 }
