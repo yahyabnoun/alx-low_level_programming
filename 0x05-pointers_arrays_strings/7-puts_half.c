@@ -16,7 +16,7 @@ if(strlen(s)%2 != 0)
     i = (strlen(s)-1)/2;
 }
 else{
-    i = (strlen(s)+1)/2;
+    i = (strlen(s)-2)/2;
 }
  
 
