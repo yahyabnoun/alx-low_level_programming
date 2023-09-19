@@ -1,28 +1,23 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 /**
- * puts2 - function that reverses a string.
- * @s: the string
+ * puts_half - prints half of a string
+ * @str: char to check
  *
- * prints a string
+ * Return: 0 is success
  */
-void puts_half(char *s)
+void puts_half(char *str)
 {
-int i;
-int b = strlen(s);
-if(strlen(s)%2 != 0)
-{
-    i = (strlen(s)-1)/2;
-}
-else{
-    i = (strlen(s)-2)/2;
-}
- 
+	int string = 0, n;
 
-for (; i < b ; i++)
-{
-_putchar(s[i]);
-}
-_putchar('\n');
+	while (str[string] != '\0')
+		string++;
+	if (string + 1 % 2 != '0')
+		n = (string - 1) / 2;
+	else
+		n = (string / 2);
+	n++;
+
+	for (string = n; str[string] != '\0'; string++)
+	_putchar(str[string]);
+	_putchar('\n');
 }
