@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - prints its name, followed by a new line.
+ * main - adds positive numbers.
  * @argc: argument count
  * @argv: arguments
  *
@@ -26,7 +26,7 @@ sum += atoi(argv[i]);
 else
 {
 printf("%s\n", "Error");
-return (0);
+return (1);
 }
 }
 printf("%d\n", sum);
