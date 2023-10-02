@@ -15,7 +15,7 @@ if (argc == 1)
 {
 printf("%d\n", 0);
 }
-else if (argc > 1)
+else if (argc > 2)
 {
 for (; i < argc; i++)
 {
