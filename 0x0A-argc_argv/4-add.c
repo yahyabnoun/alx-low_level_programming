@@ -10,28 +10,26 @@
 int main(int argc, char **argv)
 {
 int i = 1;
-int sum=0;
+int sum = 0;
 if (argc == 1)
 {
-    printf("%d\n", 0);    
+printf("%d\n", 0);
 }
 else if (argc > 1)
 {
-    for (;i < argc;i++)
-        {
-          if (atoi(argv[i]))
-            {        
-                sum+=atoi(argv[i]);   
-            }  
-            else
-            {
-                printf("%s\n", "Error");
-                return (0);
-            }
-            
-        }
-    printf("%d\n", sum);
+for (; i < argc; i++)
+{
+if (atoi(argv[i]))
+{
+sum += atoi(argv[i]);
 }
-
+else
+{
+printf("%s\n", "Error");
+return (0);
+}
+}
+printf("%d\n", sum);
+}
 return (0);
 }
