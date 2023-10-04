@@ -15,7 +15,7 @@ unsigned int i;
 int size = strlen(str) - 1;
 t = (char *)malloc(sizeof(char) * size);
 
-if (t == NULL || size <= 0)
+if (t == NULL || str == NULL)
 {
 return (NULL);
 }
