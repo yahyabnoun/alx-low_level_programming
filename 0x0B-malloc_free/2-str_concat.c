@@ -20,7 +20,7 @@ return (NULL);
 }
 size = strlen(s1);
 
-t = (char *)malloc((sizeof(char) * (size + strlen(s1))) +1);
+t = (char *)malloc((sizeof(char) * (size + strlen(s1))) + 2);
 
 if (t == NULL)
 {
