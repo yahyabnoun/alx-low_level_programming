@@ -14,7 +14,7 @@ char *t;
 unsigned int i;
 t = (char *)malloc(sizeof(char) * (strlen(str) - 1));
 
-if (t == NULL)
+if (t == NULL || *str == '')
 {
 return (NULL);
 }
