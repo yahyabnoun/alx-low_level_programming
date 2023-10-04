@@ -10,19 +10,22 @@
  */
 char *_strdup(char *str)
 {
-char *t;
-unsigned int i;
-int size = strlen(str);
-t = (char *)malloc((sizeof(char) * size) + 1);
+	char *copy;
+	int i, len = 0;
 
-if (t == NULL || str == NULL)
-{
-return (NULL);
-}
-else
-{
-for (i = 0; str[i] != '\0'; i++)
-t[i] = str[i];
-}
-return (t);
+	if (str == NULL)
+		return (NULL);
+
+	while (str[len] != '\0')
+		len++;
+
+	copy = (char *)malloc((sizeof(char) * len) + 1);
+	if (copy == NULL)
+		return (NULL);
+
+	for (i = 0; i < len; i++)
+		copy[i] = str[i];
+	copy[len] = '\0';
+
+	return (copy);
 }
