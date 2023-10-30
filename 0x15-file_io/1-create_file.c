@@ -17,8 +17,9 @@ int len = strlen(text_content);
 		return (-1);
 
 	o = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	if (o == -1)
+	if (o == -1 || len)
 		return (-1);
+
 
 	w = write(o, text_content, len);
 	if (w == -1)
