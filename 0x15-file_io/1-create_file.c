@@ -1,4 +1,3 @@
- * @o: variabale , if file not opne return -1
 #include "main.h"
 
 /**
